@@ -2,4 +2,4 @@ frontend:
   phases:
     preBuild:
       commands:
-        - nvm install 16
+        - nvm install 14

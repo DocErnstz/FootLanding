@@ -1,5 +1,0 @@
-frontend:
-  phases:
-    preBuild:
-      commands:
-        - nvm install 14

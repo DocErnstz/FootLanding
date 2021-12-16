@@ -3,7 +3,7 @@ frontend:
     preBuild:
       commands:
         - nvm install 12.22.0
-        - npm ci
+        - npm install
     build:
       commands:
         - node -v

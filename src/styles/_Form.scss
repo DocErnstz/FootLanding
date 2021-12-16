@@ -7,7 +7,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  padding-top: 3%;
 }
 
 #Form h1 {
@@ -26,7 +28,7 @@
 }
 
 #Form form {
-  height: 60%;
+  height: 50%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -85,7 +87,6 @@
 }
 
 #terms {
-  width: 300px;
-  height: 100px;
   overflow: scroll;
+  color: #F1505B;
 }

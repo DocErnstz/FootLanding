@@ -47,8 +47,8 @@ function Form() {
               <input type="email" {...register("email")} />
             </div>
             <div>
-              <label id="spacedTop">Acepto terminos y condiciones<input id="spacedLeft" type="checkbox" onClick={()=>{setTerms(!terms)}}/></label>
-              <p id="terms"></p>
+              <label id="spacedTop">Acepto <a id="terms" href="/terminos">terminos y condiciones</a><input id="spacedLeft" type="checkbox" onClick={()=>{setTerms(!terms)}}/></label>
+              
             </div>
             {terms && <button type="submit">ENVIAR</button>}
           </form>

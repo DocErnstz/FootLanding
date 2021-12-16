@@ -3,3 +3,15 @@ frontend:
     preBuild:
       commands:
         - nvm install 12.22.0
+        - npm ci
+    build:
+      commands:
+        - node -v
+        - npm run-script build
+  artifacts:
+    baseDirectory: build
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*

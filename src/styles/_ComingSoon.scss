@@ -1,0 +1,287 @@
+#ComingSoon{
+    @keyframes ShowUp {
+        from {
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    @keyframes ShowUpL {
+        from {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    @keyframes ShowUpR {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    @keyframes ShowUpU {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    .SUu1{
+        animation: ShowUpU 1s ease-in-out;
+        animation-fill-mode: forwards;
+   
+    }
+    .SUu2{
+        animation: ShowUpU 1s ease-in-out;
+        animation-fill-mode: forwards;
+       
+    }
+
+    .ShowUpLL{
+        animation: ShowUpL 1s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    .ShowUpRR{
+        animation: ShowUpR 1s ease-in-out;
+        animation-fill-mode: forwards;
+    
+       
+    }
+    .SU1{
+        animation: ShowUpL 1s ease-in-out;
+         animation-fill-mode: forwards;
+       
+    }
+    .SU2{
+        animation: ShowUpL 1s ease-in-out;
+         animation-fill-mode: forwards;
+      
+    }
+    .container{
+        width: 1100px;
+        margin: 0 auto;
+        margin-top: 146px;
+        .title{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 32px;
+            /* identical to box height, or 200% */
+            text-align: center;
+            color: #F1505B;
+            opacity: 0;
+        }
+        .titleContent{
+            width: 650px;
+            margin: 0 auto;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 42px;
+            line-height: 64px;
+            /* or 152% */
+            text-align: center;
+            font-feature-settings: 'salt' on, 'liga' off;
+            color: #FFFFFF;
+            opacity: 0;
+        }
+        .bottomText{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height, or 150% */
+            text-align: center;
+            color: #FFFFFF;
+            margin-top: 20px;
+            opacity: 0;
+        }
+    }
+    .container2 {
+        display: flex;
+        width: 1100px;
+        margin: 0 auto;
+        margin-top: 103px;
+        img{
+            opacity: 0;
+        }
+        .skills{
+            margin-left: 195px;
+            .skill{
+                opacity: 0;
+                display: flex;
+                position: relative;
+                width: 646px;
+                height: 70px;
+                 margin-bottom: 16px;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.4s ease-in-out;
+                &:hover .skillInner {
+                    transform: rotateX(180deg);
+                    
+                }
+                &:hover > p{
+                    opacity: 1;
+                }
+                &:nth-child(2) .skillInner{
+                    background: #1B2949;
+                }
+                &:nth-child(3) .skillInner{
+                    background: #283C6B;
+                }
+                &:nth-child(4) .skillInner{
+                    background: #D54D56;
+                }
+                p{
+                           position: absolute;
+                           top: 1.5vw;
+                           left: 5vw;
+                           text-align: center;
+                           font-family: Inter;
+                           font-style: normal;
+                           font-weight: 500;
+                           font-size: 10px;
+                           color: #fff;
+                           opacity: 0;
+                           width: 80%;
+                           z-index: 99;
+                           transition: all 0.4s ease-in-out;
+                       }
+                perspective: 1000px;
+               .skillInner{
+                   position: relative;
+                   width: 100%;
+                   height: 100%;
+                   text-align: center;
+                   transition: transform 0.6s;
+                   transform-style: preserve-3d;
+                   background: #111A2F;
+                   border: 2px solid #12141F;
+                   box-sizing: border-box;
+                   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                   border-radius: 25px;
+                   
+                   .skillFront, .skillBack{
+                       position: absolute;
+                       width: 100%;
+                       height: 100%;
+                       -webkit-backface-visibility: hidden;
+                       backface-visibility: hidden;
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       margin: 0 auto;
+                       
+                   }
+                   .skillBack{
+                       transform: rotateX(180deg);
+                       font-family: Inter;
+                       font-style: normal;
+                       font-weight: 500;
+                       font-size: 10px;
+                      
+                       color: #FFFFFF;
+                       p{
+                           width: 80%;
+                           opacity: 0;
+                       }
+
+                   }
+                   
+
+               }
+                
+                .content{
+                    width: 572px;
+                    display: flex;
+                    justify-content: space-between;
+                .name{
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 25px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                }
+                .power{
+                    font-family: Inter;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    /* identical to box height, or 120% */
+                    color: #FFFFFF;
+                }
+                }
+               
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px){
+    #ComingSoon{
+        .container.responsive{
+            width: 87.85vw;
+            .titleContent{
+                width: 100%;
+                text-align: center;
+                font-size: 42px;
+            }
+            .bottomText{
+                margin-top: 11px;
+                margin: 0 auto;
+                width: 57.2vw;
+            }
+        }
+        .container2.responsive{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 87.85vw;
+            img{
+               
+                width: 60.9vw;
+                height: 76.16vw;
+            }
+            .skills{
+                margin-left: 0px;
+                margin-top: 43px;
+                width: 100%;
+                
+                .skill{
+                     width: 100%;
+                height: 70px;
+                p{
+                    top: 3vw;
+                    left: 8vw;
+                }
+                .content{
+                    width: 77.57vw;
+                    .name{
+                    font-size: 20px;
+                }
+                .power{
+                    font-size: 15px;
+                  }
+                }
+                
+                }
+            }
+        }
+    }
+}

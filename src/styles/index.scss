@@ -1,0 +1,402 @@
+@import "navbar.scss";
+@import "intro.scss";
+@import "AboutUs.scss";
+@import "ComingSoon.scss";
+@import "GeneralRoad.scss";
+@import "RoadMap.scss";
+@import "Footer.scss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
+@import "Form.scss";
+@import "Prelist.scss";
+@import "Socials.scss";
+ 
+
+body{
+   height: 100%;
+  background: #0C0D14;
+   overflow-x: hidden;
+   $left: 30vw;
+   @keyframes Move {
+       0%{
+           top: 72px;
+       }
+       25%{
+           top: calc(72px + 350vh);
+           left: $left;
+       }
+       50%{
+           top: 700vh;
+           left: 0;
+       }
+       75%{
+           top: calc(72px + 350vh);
+           left: $left;
+       }
+       100%{
+           top: 72px;
+           left: -563px;
+       }
+   }
+    @keyframes Move2 {
+       0%{
+           top: 631px;
+       }
+       25%{
+           top: calc(631px + 300vh);
+           left: 0;
+       }
+       50%{
+           top: 700vh;
+           left: $left;
+       }
+       75%{
+           top: calc(631px + 300vh);
+           left: 0;
+       }
+       100%{
+           top: 631px;
+           left: 326px;
+       }
+   }
+   @keyframes Move3 {
+       0%{
+           top: 1063px;
+       }
+       25%{
+           top: calc(1063px + 250vh);
+           left: $left;
+       }
+       50%{
+           top: 700vh;
+           left: 0;
+       }
+       75%{
+           top: calc(1063px + 250vh);
+           left: $left;
+       }
+       100%{
+           top: 1063px;
+           left: -516px;
+       }
+   }
+   @keyframes Move4 {
+       0%{
+           top: 2002px;
+       }
+       25%{
+           top: calc(2002px + 200vh);
+           left: 0;
+       }
+       50%{
+           top: 700vw;
+           left: $left;
+       }
+       75%{
+           top: calc(2002px + 200vh);
+           left: 0;
+       }
+       100%{
+           left: 317px;
+       }
+   }
+   @keyframes Move5 {
+       0%{
+           top: 2698px;
+       }
+       25%{
+           top: calc(2698px - 200vh);
+           left: $left;
+       }
+       50%{
+           top: 0;
+           left: 0;
+       }
+       75%{
+           top: 200vh;
+           left: $left;
+       }
+       100%{
+           top: 2698px;
+           left: -273px;
+       }
+   }
+   @keyframes Move6 {
+       0%{
+           top: 3545px;
+       }
+       25%{
+           top: calc(3045px - 200vh);
+           left: 0;
+       }
+       50%{
+           top: 0;
+           left: $left;
+       }
+       75%{
+           top: 400vh;
+           left: 0;
+       }
+       100%{
+           top: 3545px;
+           left: 298px;
+       }
+   }
+   $leftDesk: 50vw;
+   @keyframes MoveX {
+       0%{
+           top: 74px;
+       }
+       25%{
+           top: calc(74px + 150vh);
+           left: $leftDesk;
+       }
+       50%{
+           top: 400vh;
+           left: 0;
+       }
+       75%{
+           top: calc(74px + 150vh);
+           left: $leftDesk;
+       }
+       100%{
+           top: 74px;
+           left: -353px;
+       }
+   }
+   @keyframes MoveX2 {
+       0%{
+           top: 631px;
+       }
+       25%{
+           top: calc(631px + 100vh);
+           left: 0;
+       }
+       50%{
+           top: 400vh;
+           left: $leftDesk;
+       }
+       75%{
+           top: calc(74px + 100vh);
+           left: 0;
+       }
+       100%{
+           top: 631px;
+           left: 1277px;
+       }
+   }
+   @keyframes MoveX3 {
+       0%{
+           top: 1063px;
+       }
+       25%{
+           top: calc(1063px + 150vh);
+           left: $leftDesk;
+       }
+       50%{
+           top: 400vh;
+           left: 0;
+       }
+       75%{
+           top: calc(1063px + 150vh);
+           left: $leftDesk;
+       }
+       100%{
+           top: 1063px;
+           left: -335px;
+       }
+   }
+  
+
+    @keyframes MoveX4 {
+       0%{
+           top: 2002px;
+       }
+       25%{
+           top: calc(2002px + 150vh);
+           left: 0;
+       }
+       50%{
+           top: 400vh;
+           left: $leftDesk;
+       }
+       75%{
+           top: calc(2002px + 150vh);
+           left: 0;
+       }
+       100%{
+           top: 2002px; 
+           left: 1327px;
+       }
+   }
+   @keyframes MoveX5 {
+       0%{
+           top: 2098px;
+       }
+       25%{
+           top: calc(2098px - 200vh);
+           left: $leftDesk;
+       }
+       50%{
+           top: 400vh;
+           left: 0;
+       }
+       75%{
+           top: calc(2098px - 300vh);
+           left: $leftDesk;
+       }
+       100%{
+           top: 2098px;
+           left: -333px;
+       }
+   }
+   @keyframes MoveX6 {
+       0%{
+           top: 3045px;
+       }
+       25%{
+           top: calc(3045px - 300vh);
+           left: 0;
+       }
+       50%{
+           top: 400vh;
+           left: $leftDesk;
+       }
+       75%{
+            top: calc(3045px - 300vh);
+           left: 0;
+       }
+       100%{
+           top: 3045px;
+           left: 1346px;
+       }
+   }
+   .cir{
+       position: relative;
+       opacity: .05;
+       img{
+           z-index: -99;
+       }
+   }
+   $sec2: 100s;
+   $sec: 50s;
+   $sec3: 60s;
+   $sec4: 70s;
+   $sec5: 80s;
+   $sec6: 90s;
+   $sizex: 35vw;
+   $sizey: 35vw;
+   .circle{
+       position: absolute;
+       left: -353px;
+       top: 72px;
+       width: $sizex;
+            height: $sizey;
+       animation: MoveX $sec infinite;
+    }
+    .circle2{
+        position: absolute;
+        left: 1277px;
+        top: 631px;
+        width: $sizex;
+            height: $sizey;
+            animation: MoveX2 $sec2 infinite;
+    }
+    .circle3{
+        position: absolute;
+left: -335px;
+top: 1063px;
+
+            width: $sizex;
+            height: $sizey;
+animation: MoveX3 $sec3 infinite;
+    }
+    .circle4{
+        position: absolute;
+left: 1327px;
+top: 2002px;
+
+            width: $sizex;
+            height: $sizey;
+animation: MoveX4 $sec4 infinite;
+    }
+    .circle5{
+     position: absolute;
+left: -333px;
+top: 2698px;
+width: $sizex;
+            height: $sizey;
+animation: MoveX5 $sec5 infinite;   
+    }
+    .circle6{
+        position: absolute;
+            left: 1346px;
+            top: 3545px;
+
+            width: $sizex;
+            height: $sizey;
+            animation: MoveX6 $sec6 infinite;
+    }
+    
+    @media (max-width: 1100px){
+        $upgrade: 0vw;
+        $sec: 300s;
+        .circle{
+            left: 0;
+            width: calc(65vw + #{$upgrade});
+            height: calc(65vw + #{$upgrade});
+            animation: Move $sec infinite;
+        }
+        .circle2{
+         left: 30vw;
+         width: calc(38.8vw + #{$upgrade});
+        height: calc(39.2vw + #{$upgrade});
+         animation: Move2 $sec infinite;   
+        }
+        .circle3{
+            left: 0;
+             width: calc(65vw + #{$upgrade});
+            height: calc(65vw + #{$upgrade});
+            animation: Move3 $sec infinite;
+        }
+        .circle4{
+            left: 30vw;
+            top: 2728px;
+            width: calc(42.36vw + #{$upgrade});
+            height: calc(42.36vw + #{$upgrade});
+            animation: Move4 $sec infinite;
+        }
+        .circle5{
+            left: 0;
+            top: 3548px;
+            z-index: -99;
+            width: calc(49.63vw + #{$upgrade});
+            height: calc(49.63vw + #{$upgrade});
+            animation: Move5 $sec infinite;
+        }
+        .circle6{
+            left: 30vw;
+            top: 4436px;
+            width: calc(30.9vw + #{$upgrade});
+            height: calc(30.9vw + #{$upgrade});
+            animation: Move6 $sec infinite;
+        }
+    }
+   
+
+}
+
+#root{
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+   
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+

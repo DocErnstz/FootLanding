@@ -1,0 +1,161 @@
+#AboutUs{
+     @keyframes ShowUpL {
+        from {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    @keyframes ShowUpR {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+             z-index: -99;
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+            z-index: -99;
+        }
+    }
+    @keyframes ShowUp {
+        from {
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+
+    }
+     .SU1{
+        animation: ShowUpL 1s ease-in-out;
+         animation-fill-mode: forwards;
+         animation-delay: 0.2s;
+    }
+    .SU2{
+        animation: ShowUpL 1s ease-in-out;
+         animation-fill-mode: forwards;
+         animation-delay: 0.4s;
+    }
+    .SU3{
+        animation: ShowUpL 1s ease-in-out;
+         animation-fill-mode: forwards;
+         animation-delay: 0.5s;
+    }
+
+    .ShowUpLL{
+        animation: ShowUpL 1s ease-in-out;
+        animation-fill-mode: forwards;
+        animation-delay: 0.3s;
+        
+    }
+    .ShowUpRR{
+        animation: ShowUpR 1s ease-in-out;
+         animation-fill-mode: forwards;
+         animation-delay: 0.5s;
+    }
+    .ShowUpRRE{
+         animation: ShowUpR 1s ease-in-out;
+         animation-fill-mode: forwards;
+    }
+    .container{
+        width: 1100px;
+        margin: 0 auto;
+        .content{
+            .quienes{
+               font-family: Inter;
+               font-style: normal;
+               font-weight: 500;
+               font-size: 16px;
+               line-height: 32px;
+               /* identical to box height, or 200% */
+               color: #F1505B;
+               opacity: 0;
+            }
+            .title{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 48px;
+                line-height: 64px;
+                /* identical to box height, or 133% */
+                font-feature-settings: 'salt' on, 'liga' off;
+                color: #FFFFFF;
+                opacity: 0;
+            }
+            .text{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 32px;
+                /* or 178% */
+                font-feature-settings: 'salt' on, 'liga' off;
+                color: #FFFFFF;
+                opacity: 0;
+            }
+            .bottomText{
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 32px;
+                /* or 178% */
+                font-feature-settings: 'salt' on, 'liga' off;
+                color: #FFFFFF;
+                margin-top: 35px;
+                opacity: 0;
+            }
+        } 
+        .mint{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            width: 172px;
+            margin-top: 116px;
+height: 48px;
+background: #1B2949;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 6px;
+font-family: Inter;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height, or 120% */
+
+text-align: center;
+font-feature-settings: 'salt' on, 'liga' off;
+
+/* Default / White */
+
+color: #FFFFFF;
+opacity: 0;
+        }
+    }
+}
+@media (max-width: 1100px){
+    #AboutUs{
+        .container.responsive{
+            width: 87.85vw;
+            .content{
+                .quienes{
+                    font-size: 14px;
+                }
+                .title{
+                    font-size: 40px;
+                }
+                .text{
+                    font-size: 20px;
+                }
+            }
+            .mint{
+                margin-top: 61px;
+            }
+        }
+    }
+}

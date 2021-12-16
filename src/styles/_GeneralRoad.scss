@@ -1,0 +1,202 @@
+#GeneralRoad{
+    margin-top: 44px;
+    @keyframes ShowUpR {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    @keyframes ShowUpU {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    .SUu1{
+        animation: ShowUpU 1s ease-in-out;
+        animation-fill-mode: forwards;
+       
+    }
+    .SUu2{
+        animation: ShowUpU 1s ease-in-out;
+        animation-fill-mode: forwards;
+ 
+    }
+    .SU1{
+        animation: ShowUpL 1s ease-in-out;
+         animation-fill-mode: forwards;
+    
+    }
+    .SU2{
+        animation: ShowUpL 1s ease-in-out;
+         animation-fill-mode: forwards;
+   
+    }
+    .ShowUpRR{
+        animation: ShowUpR 1s ease-in-out;
+        animation-fill-mode: forwards;
+       
+    }
+    .header{
+        width: 1100px;
+        margin: 0 auto;
+        .title{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 32px;
+            /* identical to box height, or 200% */
+            text-align: center;
+            color: #F1505B;
+            opacity: 0;
+        }
+        .subtitle{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 42px;
+            line-height: 64px;
+            /* identical to box height, or 152% */
+            text-align: center;
+            color: #FFFFFF;
+             opacity: 0;
+        }
+    }
+    .steps{
+        display: flex;
+        flex-direction: column;
+        width: 1100px;
+        margin: 0 auto;
+        margin-top: 80px;
+        .step{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #12141F;
+            width: 772px;
+            padding: 10px;
+            border: 2px solid #12141F;
+            box-sizing: border-box;
+            border-radius: 15px;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            /* or 120% */
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 32px;
+            opacity: 0;
+        }
+        
+    }
+    .post{
+        
+        display: flex;
+        width: 1100px;
+        margin: 0 auto;
+        margin-top: 64px;
+        background: #12141F;
+        border-radius: 16px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        justify-content: space-between;
+        img{
+            opacity: 0;
+        }
+        .content{
+            margin-left: 45px;
+            margin-top: 48px;
+            .title{
+                font-family: Inter;
+                width: 70%;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 40px;
+                line-height: 54px;
+                color: #FFFFFF;
+                opacity: 0;
+            }
+            .entrar{
+                margin-top: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 232px;
+                height: 48px;
+                background: #1B2949;
+                border-radius: 6px;
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                /* identical to box height, or 150% */
+                text-align: center;
+                color: #FFFFFF;
+                opacity: 0;
+            }
+        }
+    }
+    .step:first-child{
+        align-self: flex-start;
+    }
+    .step:nth-child(2){
+        align-self: flex-end;
+    }
+    .step:nth-child(3){
+        align-self: flex-start;
+        
+    }
+    .step:nth-child(4){
+        align-self: flex-end;
+    }
+}
+
+@media (max-width: 1100px){
+    #GeneralRoad{
+        .header{
+            width: 87.85vw;
+        }
+        .steps{
+            width: 87.85vw;
+           
+            .step{
+                width: 87.61vw;
+                align-self: center;
+                font-size: 15px;
+            }
+        }
+        .post{
+            width: 87.85vw;
+            
+            .content{
+                width: 100%;
+                margin: 20px;
+                
+                .title{
+                    font-size: 31px;
+                    width: 100%;
+                    text-align: center;
+                }
+                .entrar{
+                    margin: 0 auto;
+                    margin-top: 26px;
+                }
+                
+            }
+            img{
+                display: none;
+            }
+        }
+    }
+}

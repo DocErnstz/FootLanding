@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 function Form() {
   
   const [render, setRender] = useState(true);
+  const [terms, setTerms] = useState(false);
   const { register, handleSubmit } = useForm();
   const onSubmit = async(data) => {
     console.log(JSON.parse(JSON.stringify(data)))
@@ -45,7 +46,11 @@ function Form() {
               <label>Mail</label>
               <input type="email" {...register("email")} />
             </div>
-            <button type="submit">ENVIAR</button>
+            <div>
+              <label id="spacedTop">Acepto terminos y condiciones<input id="spacedLeft" type="checkbox" onClick={()=>{setTerms(!terms)}}/></label>
+              <p id="terms"></p>
+            </div>
+            {terms && <button type="submit">ENVIAR</button>}
           </form>
           {/* <button id="closeBtn" onClick={()=>{setRender(false)}}>x</button> */}
         </section>

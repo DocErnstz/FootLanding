@@ -13,7 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-         <Route path="prelist" element={<Prelist />} />
+         <Route path="prelista" element={<Prelist />} />
          <Route path="*" element={<><Form /><Socials /></>}/>
       </Routes>
     </BrowserRouter>

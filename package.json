@@ -50,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.16.5",
     "autoprefixer": "^10.3.5",
     "postcss": "^8.3.7",
     "tailwindcss": "^2.2.15",

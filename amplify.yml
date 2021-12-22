@@ -7,7 +7,7 @@ frontend:
     build:
       commands:
         - node -v
-        - npm run-script build
+        - npm run build
   artifacts:
     baseDirectory: build
     files:
